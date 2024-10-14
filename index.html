@@ -68,7 +68,12 @@
         }
         article{
             flex: 1; /* Hver artikkel får lik vekt */
-            max-width: 460px; /* Maksimal bredde for hvert bilde */
+            max-width: 340px; /* Maksimal bredde for hvert bilde */
+        }
+        a {
+            text-decoration: none; /* Fjerner understrek fra lenken */
+            display: block; /* Får lenken til å dekke hele artikkelen */
+            height: 100%; /* Får lenken til å dekke hele høyden på artikkelen */
         }
     </style>
 </head>
@@ -106,13 +111,19 @@
     </table>
     <section>
         <article>
+            <a href="https://snl.no/Burj_Khalifa">
             <img src="burj_stor.jpg" alt="Burj Khalifa">
+        </a>
         </article>
         <article>
+            <a href="https://snl.no/Shanghai">
             <img src="Shanghai_stor.jpg" alt="Shanghai Tower">
+        </a>
         </article>
         <article>
+            <a href="https://en.wikipedia.org/wiki/The_Clock_Towers">
             <img src="Makkah_stor.jpg" alt="Makkah Royal Clock Tower">
+        </a>
         </article>
     </section>
 </body>
